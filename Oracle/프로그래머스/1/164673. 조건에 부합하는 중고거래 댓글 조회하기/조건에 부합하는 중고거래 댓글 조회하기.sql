@@ -1,0 +1,2 @@
+-- 코드를 입력하세요
+SELECT b.title, b.board_id, r.reply_id, r.writer_id, r.contents, to_char(r.created_date, 'YYYY-MM-DD') as created_date FROM USED_GOODS_BOARD b, USED_GOODS_REPLY r WHERE r.board_id = b.board_id AND TO_CHAR(b.CREATED_DATE, 'YYYY-MM') = '2022-10' ORDER BY r.created_date asc, b.title asc;
